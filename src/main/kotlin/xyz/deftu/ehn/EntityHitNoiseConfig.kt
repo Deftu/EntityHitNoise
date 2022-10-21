@@ -44,8 +44,8 @@ object EntityHitNoiseConfig : Vigilant(
         name = "Audio volume",
         category = "Sound",
         min = 0,
-        max = 100
-    ) @JvmStatic var volume = 100
+        max = 1000
+    ) @JvmStatic var volume = 1000
 
     init {
         initialize()

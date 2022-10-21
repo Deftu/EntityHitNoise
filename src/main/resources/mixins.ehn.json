@@ -3,6 +3,6 @@
     "package": "xyz.deftu.ehn.mixins",
     "compatibilityLevel": "JAVA_8",
     "mixins": [
-        "EntityLivingBaseMixin"
+        "EntityPlayerMixin"
     ]
 }

@@ -1,5 +1,3 @@
-import xyz.unifycraft.gradle.utils.GameSide
-
 plugins {
     java
     kotlin("jvm") version("1.6.10")
@@ -13,11 +11,11 @@ plugins {
 
 unifycraft {
     useEssential()
-    //useDevAuth()
+    useDevAuth()
 }
 
 loomHelper {
-    useArgument("--tweakClass", "gg.essential.loader.stage0.EssentialSetupTweaker", GameSide.CLIENT)
+    useTweaker("gg.essential.loader.stage0.EssentialSetupTweaker")
     useForgeMixin(modData.id)
     useMixinRefMap(modData.id)
 }
